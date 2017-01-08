@@ -1,9 +1,10 @@
 package hxloda.common;
 
-interface ILoader {
+import hxdispose.IDisposable;
+
+interface ILoader extends IDisposable {
 	public var content(default, null):Dynamic;
 
-	public function dispose():Void;
 	public function load():Void;
 	public function cancel():Void;
 }
