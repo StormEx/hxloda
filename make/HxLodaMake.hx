@@ -13,7 +13,9 @@ class HxLodaMake extends hxmake.Module {
 		config.classPath = ["src"];
 		config.testPath = ["test"];
 		config.devDependencies = [
-			"utest" => "haxelib"
+			"utest" => "haxelib",
+			"hxassert" => "haxelib",
+			"hxlog" => "haxelib"
 		];
 
 		apply(HaxelibPlugin);
